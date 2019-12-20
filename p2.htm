@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script>
+var b;
+function my_info(c) {
+                                          b=document.getElementById('info');
+                                          if(c==1)
+                                         { 
+                                            b.style.display="block";
+                                         }
+                                         else
+                                         { 
+                                            b.style.display="none";
+                                         }
+                                             }
+                                   
+</script>
+</head>
+<body>
+<dir class="zero">
+<ul>
+<li><a href="p1.htm"><b>HOME</b></a></li>
+<li><a href="#oone"><b>PROFILE</b></a></li>
+<li><a href="#ttwo"><b>KNOWLEDGE</b></a></li>
+<li><a href="#tthree"><b>CONTACT</b></a></li>
+</ul>
+</dir>
+<br><br><br>
+<dir class="one" id="oone">
+<h2><i>Profile</i></h2>
+<h6><i>Aim is to become a full-stack developer...</i></h6>
+<img src="profile.jpg" width=20% height=15%>
+<button onclick=my_info(1)>Who's this guy?</button>
+<p id="info" style="font-size:25px;display:none;">
+* Graphic Designer at <b>GAWDS</b><br>
+* Persuing Information Technology at <b>NIT, Kurukshetra</b>.
+<br>
+<br>
+<button onclick=my_info(0)>Show less</button>
+</p>
+<hr width="70%">
+</dir>
+<dir class="two" id="ttwo">
+<h2><i>Knowledge</i></h2>
+<h6><i>I can't say I'm proficient in all of the following skills, but yes I am familiar with them to
+an extent.</i></h6>
+<ul type="square">
+<li>HyperText Markup Language</li>
+<hr>
+<li>Cascading Style Sheet</li>
+<hr>
+<li>JavaScript</li>
+<hr>
+<li>C</li>
+<hr>
+<li>C++</li>
+<hr>
+<li>Adobe Photoshop</li>
+<hr>
+<li>Adobe AfterEffects</li>
+<hr>
+<li>Git</li>
+</ul>
+<hr width="70%">
+</dir>
+<dir class="three" id="tthree">
+<h2><i>Contact me:</i></h2>
+<img src="code.jpg">
+<ul>
+<li><a href="https://www.instagram.com/devyansh.chawla"><img src="instalogo.jpg" 
+width=80px height=75px>
+</a></li><br><br>
+<li><a href="https://www.github.com/thedevyansh"><img src="gitlogo.jpg" 
+width=90px height=85px>
+</a></li>
+</ul>
+<br>
+<hr width="70%">
+</dir>
+</body>
+</html>
