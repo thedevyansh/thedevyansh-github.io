@@ -3,7 +3,7 @@ background-image: url('p2image1.jpg');
 }
 .zero ul {
 list-style-type: none;
-margin: 15px;
+margin: 2px 15px 5px 15px;
 padding: 2px;
 overflow: hidden;
 background-color: #333333;
