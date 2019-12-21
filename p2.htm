@@ -3,7 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css"
+ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" 
+                                             rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap"       
+                                            rel="stylesheet">
 <script>
 var b;
 function my_info(c) {
@@ -21,65 +27,82 @@ function my_info(c) {
 </script>
 </head>
 <body>
-<dir class="zero">
-<ul>
-<li><a href="index.html"><b>HOME</b></a></li>
-<li><a href="#oone"><b>PROFILE</b></a></li>
-<li><a href="#ttwo"><b>KNOWLEDGE</b></a></li>
-<li><a href="#tthree"><b>CONTACT</b></a></li>
-</ul>
-</dir>
-<br><br><br>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+            data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    <a class="navbar-brand">dev_monk</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">HOME</a></li>
+       <li><a href="#oone">PROFILE</a></li>
+        <li><a href="#ttwo">KNOWLEDGE</a></li>
+        <li><a href="#tthree">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br><br>
 <dir class="one" id="oone">
-<h2><i>Profile</i></h2>
-<h6><i>Aim is to become a full-stack developer...</i></h6>
-<img src="profile.jpg" width=20% height=15%>
-<button onclick=my_info(1)>Who's this guy?</button>
-<p id="info" style="font-size:25px;display:none;">
+<h2><b>PROFILE</b></h2>
+<h6>Aim is to become a full-stack developer...</h6>
+<br>
+<img src="profile.jpg" width=20% height=15% class="img-rounded">
+<br>
+<h6>I'm a bibliophile, and a potterhead as well.</h6>
+<br>
+  <button onclick=my_info(1)>Who's this guy?</button>
+<br><br>
+<p id="info" style="font-size:3vw;display:none;font-family: 'Ubuntu', sans-serif;">
 * Graphic Designer at <b>GAWDS</b><br>
 * Persuing Information Technology at <b>NIT, Kurukshetra</b>.
-<br>
-<br>
+<br><br>
 <button onclick=my_info(0)>Show less</button>
 </p>
 <hr width="70%">
 </dir>
 <dir class="two" id="ttwo">
-<h2><i>Knowledge</i></h2>
-<h6><i>I can't say I'm proficient in all of the following skills, but yes I am familiar with them to
-an extent.</i></h6>
+<h2><b>KNOWLEDGE</b></h2>
+<h6>I can't say I'm proficient in all of the following skills, but yes I am familiar with them to
+an extent.</h6>
+<br>
 <ul type="square">
-<li>HyperText Markup Language</li>
 <hr>
-<li>Cascading Style Sheet</li>
-<hr>
-<li>JavaScript</li>
-<hr>
-<li>C</li>
-<hr>
-<li>C++</li>
-<hr>
-<li>Adobe Photoshop</li>
-<hr>
-<li>Adobe AfterEffects</li>
-<hr>
+<li>HyperText Markup Language</li><hr>
+<li>Cascading Style Sheet</li><hr>
+<li>JavaScript</li><hr>
+<li>C</li><hr>
+<li>C++</li><hr>
+<li>Adobe Photoshop</li><hr>
+<li>Adobe AfterEffects</li><hr>
 <li>Git</li>
 </ul>
 <hr width="70%">
 </dir>
 <dir class="three" id="tthree">
-<h2><i>Contact me:</i></h2>
-<img src="code.jpg">
+<h2><b>CONTACT ME:</b></h2>
+<br><br>
+<img src="code.jpg" class="img-responsive">
 <ul>
-<li><a href="https://www.instagram.com/devyansh.chawla"><img src="instalogo.jpg" 
-width=80px height=75px>
+<li><a href="https://www.instagram.com/devyansh.chawla" target="_blank"><img src="instalogo.jpg" 
+width=70px height=65px>
 </a></li><br><br>
-<li><a href="https://www.github.com/thedevyansh"><img src="gitlogo.jpg" 
-width=90px height=85px>
+<li><a href="https://www.github.com/thedevyansh" target="_blank"><img src="gitlogo.jpg" 
+width=75px height=73px>
 </a></li>
 </ul>
 <br>
 <hr width="70%">
 </dir>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
